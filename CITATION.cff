@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "DIEESE Necessary Minimum Wage and OMAL: Replication Package"
+message: "If you use this repository, please cite the author and the repository version."
+type: software
+authors:
+  - family-names: "Leite"
+    given-names: "João Gabriel Caetano"
+version: 1.0.1
+date-released: 2026-07-17

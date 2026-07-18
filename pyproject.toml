@@ -1,0 +1,10 @@
+[project]
+name = "dieese-omal-policy-replication"
+version = "1.0.0"
+description = "Replication materials for an assessment of the DIEESE necessary minimum wage and the OMAL local reference budget."
+requires-python = ">=3.10"
+authors = [{name = "João Gabriel Caetano Leite"}]
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
