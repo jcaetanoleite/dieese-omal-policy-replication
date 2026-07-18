@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "target": "data/raw/ibge_pof/Dados_20230713.zip",
+      "source_name": "Dados_20230713.zip",
+      "sha256": "f5b71f85452345e6e82caee15c70578c948981d8a8e5f99bd90ec60fac5b7932",
+      "size_bytes": 146294013,
+      "chunk_size_bytes": 8388608,
+      "parts": [
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part001",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part002",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part003",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part004",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part005",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part006",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part007",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part008",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part009",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part010",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part011",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part012",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part013",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part014",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part015",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part016",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part017",
+        "data/raw/ibge_pof/large_file_parts/Dados_20230713.zip.part018"
+      ]
+    },
+    {
+      "target": "data/raw/ibge_ipca/tabela7060_20.xlsx",
+      "source_name": "tabela7060 (20).xlsx",
+      "sha256": "e317063fbd3170e65689bebcbc059da1357d4255b1b18a5c5b05c1f585033974",
+      "size_bytes": 29866270,
+      "chunk_size_bytes": 8388608,
+      "parts": [
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_20.xlsx.part001",
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_20.xlsx.part002",
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_20.xlsx.part003",
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_20.xlsx.part004"
+      ]
+    },
+    {
+      "target": "data/raw/ibge_ipca/tabela7060_19.xlsx",
+      "source_name": "tabela7060_19.xlsx",
+      "sha256": "37424f0a6c1efbc8dfc44df80f5001cd93b2bf11da9785d24668e680b755082a",
+      "size_bytes": 20473551,
+      "chunk_size_bytes": 8388608,
+      "parts": [
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_19.xlsx.part001",
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_19.xlsx.part002",
+        "data/raw/ibge_ipca/large_file_parts/tabela7060_19.xlsx.part003"
+      ]
+    }
+  ]
+}
