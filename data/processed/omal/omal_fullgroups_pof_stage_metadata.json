@@ -1,0 +1,28 @@
+{
+  "reference_income_p30": 2308.63766666672,
+  "reference_income_p60": 4543.71311111104,
+  "n_households": 9844,
+  "n_reference": 1481,
+  "group_labels": {
+    "g1_food": "Alimentação e bebidas",
+    "g2_housing": "Habitação",
+    "g3_household_articles": "Artigos de residência",
+    "g4_clothing": "Vestuário",
+    "g5_transport": "Transportes",
+    "g6_health_personal": "Saúde e cuidados pessoais",
+    "g7_personal_expenses": "Despesas pessoais",
+    "g8_education": "Educação",
+    "g9_communication": "Comunicação"
+  },
+  "mapping_counts": {
+    "g2_housing": 56965,
+    "g3_household_articles": 36010,
+    "g9_communication": 21762,
+    "g1_food": 178230,
+    "g6_health_personal": 90707,
+    "g8_education": 21366,
+    "g4_clothing": 45443,
+    "g5_transport": 47086,
+    "g7_personal_expenses": 782
+  }
+}
