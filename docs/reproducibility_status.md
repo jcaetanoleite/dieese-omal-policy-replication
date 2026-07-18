@@ -22,3 +22,7 @@
 ## Archived exact outputs
 
 The exact PNGs used in the final editorial article are stored as `outputs/figures/figure01.png` through `figure22.png`. Regenerated versions of figures 1–14 receive the suffix `_regenerated.png`, preventing an automated run from overwriting the archived publication versions.
+
+## Automated checks
+
+Version 1.0.2 adds a GitHub Actions smoke test that runs the output-integrity tests and the complete quick pipeline. The workflow is defined in `.github/workflows/smoke-test.yml`.

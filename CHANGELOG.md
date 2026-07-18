@@ -11,3 +11,12 @@
 - Added separate MIT and CC BY 4.0 licensing notices.
 - Added explicit third-party data terms and a raw-data notice.
 - Expanded the README and methodology to clarify that OMAL is a local household reference budget, not a biological survival threshold, official poverty line or automatic minimum-wage recommendation.
+
+## 1.0.2 — 2026-07-18
+
+- Fixed PNAD capital-name harmonisation, including the Grande Vitória mapping.
+- Restored non-missing labour-income values in OMAL processed outputs.
+- Fixed figure regeneration for Figures 18 and 22.
+- Corrected the raw-file manifest test from two to three reconstructed files.
+- Added a GitHub Actions smoke test that runs both pytest and the quick replication pipeline.
+- Aligned package, citation and release version metadata.

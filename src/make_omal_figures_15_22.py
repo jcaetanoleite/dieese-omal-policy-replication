@@ -87,6 +87,8 @@ def main() -> None:
     # Figure 18
     core["ratio_to_income"] = core.omal_total / core.labour_income_real
     plot = core.dropna(subset=["labour_income_real"]).sort_values("ratio_to_income")
+    if plot.empty:
+        raise RuntimeError("No matched PNAD labour-income values. Run src/prepare_pnad_city_income.py and src/build_omal_series.py before making figures.")
     fig, ax = plt.subplots(figsize=(8.4, 6.8))
     ax.scatter(plot.labour_income_real, plot.omal_total)
     for _, r in plot.iterrows():

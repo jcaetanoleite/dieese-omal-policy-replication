@@ -17,6 +17,6 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 Suggested attribution:
 
-> Leite, João Gabriel Caetano. 2026. *Is the DIEESE Minimum Wage Useful for Policy? A Replication Package and the Local Adequate Minimum Budget (OMAL).* Version 1.0.1.
+> Leite, João Gabriel Caetano. 2026. *Is the DIEESE Minimum Wage Useful for Policy? A Replication Package and the Local Adequate Minimum Budget (OMAL).* Version 1.0.2.
 
 This license applies only to material that the repository author is legally entitled to license. It does not apply to raw data, documentation or other material obtained from third parties. See [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md).

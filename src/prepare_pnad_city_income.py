@@ -17,6 +17,17 @@ def parse_quarter(label: str) -> str | None:
     return f"{match.group(2)}Q{match.group(1)}"
 
 
+CITY_RENAMES = {
+    "Vitória": "Grande Vitória",
+}
+
+
+def normalize_city(value: str) -> str:
+    """Remove the UF suffix used by SIDRA and harmonise OMAL city names."""
+    city = re.sub(r"\s*\([A-Z]{2}\)$", "", str(value).strip())
+    return CITY_RENAMES.get(city, city)
+
+
 def main() -> None:
     raw = pd.read_excel(INPUT, sheet_name="Tabela", header=None)
     quarter_labels = list(raw.iloc[3, 3:].dropna())
@@ -24,7 +35,7 @@ def main() -> None:
     for i in range(5, len(raw)):
         if str(raw.iloc[i, 0]).strip() != "MU":
             continue
-        city = str(raw.iloc[i, 2]).strip()
+        city = normalize_city(raw.iloc[i, 2])
         values = raw.iloc[i, 3:3 + len(quarter_labels)].tolist()
         for label, value in zip(quarter_labels, values):
             q = parse_quarter(label)

@@ -237,7 +237,7 @@ python run_all.py --mode strict-raw
 
 The strict IPCA step streams more than three million spreadsheet rows and can take several minutes.
 
-The first step reconstructs two files stored as 8 MiB chunks:
+The first step reconstructs three files stored as 8 MiB chunks:
 
 - `Dados_20230713.zip`, the POF 2017–2018 microdata archive;
 - `tabela7060_20.xlsx`, the second IPCA workbook.
@@ -265,7 +265,7 @@ Figures 15–22 and the OMAL tables are rebuilt directly from the included proce
 
 Please cite:
 
-> Leite, João Gabriel Caetano. 2026. *DIEESE Necessary Minimum Wage and OMAL: Replication Package*, version 1.0.1.
+> Leite, João Gabriel Caetano. 2026. *DIEESE Necessary Minimum Wage and OMAL: Replication Package*, version 1.0.2.
 
 A machine-readable citation is available in `CITATION.cff`.
 

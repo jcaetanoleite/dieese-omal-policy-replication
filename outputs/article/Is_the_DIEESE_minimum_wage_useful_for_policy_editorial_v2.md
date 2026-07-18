@@ -30,18 +30,18 @@ $$R_{cht}^{MW}(n)=\frac{W_{cht}^{net}(n)}{MW_t},\qquad R_{cht}^{DIEESE}=\frac{OM
 
 ## OMAL figures
 
-![Figure 15](figures/figure15_omal_by_city_june2026.png)
+![Figure 15](figures/figure15.png)
 
-![Figure 16](figures/figure16_omal_composition.png)
+![Figure 16](figures/figure16.png)
 
-![Figure 17](figures/figure17_omal_timeseries_selected_cities.png)
+![Figure 17](figures/figure17.png)
 
-![Figure 18](figures/figure18_labour_income_vs_omal.png)
+![Figure 18](figures/figure18.png)
 
-![Figure 19](figures/figure19_nine_groups_revision.png)
+![Figure 19](figures/figure19.png)
 
-![Figure 20](figures/figure20_omal_vs_dieese.png)
+![Figure 20](figures/figure20.png)
 
-![Figure 21](figures/figure21_average_omal_by_household_type.png)
+![Figure 21](figures/figure21.png)
 
-![Figure 22](figures/figure22_per_worker_omal_vs_wages.png)
+![Figure 22](figures/figure22.png)

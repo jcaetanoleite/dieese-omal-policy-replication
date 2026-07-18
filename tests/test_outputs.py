@@ -35,10 +35,27 @@ def test_all_article_figures_are_present():
 
 def test_browser_safe_file_sizes():
     limit = 25 * 1024 * 1024
-    oversized = [p for p in ROOT.rglob("*") if p.is_file() and p.stat().st_size > limit]
+    manifest = json.loads((ROOT / "data" / "raw" / "large_files_manifest.json").read_text(encoding="utf-8"))
+    reconstructed = {ROOT / entry["target"] for entry in manifest["files"]}
+    oversized = [
+        p for p in ROOT.rglob("*")
+        if p.is_file() and p.stat().st_size > limit and p not in reconstructed
+    ]
     assert not oversized, oversized
 
 
-def test_large_file_manifest_has_two_reassemblies():
+def test_large_file_manifest_has_three_reassemblies():
     data = json.loads((ROOT / "data" / "raw" / "large_files_manifest.json").read_text(encoding="utf-8"))
-    assert len(data["files"]) == 2
+    targets = {entry["target"] for entry in data["files"]}
+    assert targets == {
+        "data/raw/ibge_pof/Dados_20230713.zip",
+        "data/raw/ibge_ipca/tabela7060_19.xlsx",
+        "data/raw/ibge_ipca/tabela7060_20.xlsx",
+    }
+
+
+def test_pnad_city_names_match_omal_cities():
+    pnad = pd.read_csv(ROOT / "data" / "interim" / "pnad_city_labour_income_quarterly.csv")
+    summary = pd.read_csv(OMAL / "omal_fullgroups_summary_june2026.csv")
+    assert set(summary["city"]).issubset(set(pnad["city"]))
+    assert summary["labour_income_real"].notna().all()

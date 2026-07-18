@@ -35,6 +35,10 @@ months={'Janeiro':1,'Fevereiro':2,'Março':3,'Abril':4,'Maio':5,'Junho':6,'Julho
 text=(RAW/'dieese'/'dieese_minimum_wage_monthly_1994_2026.txt').read_text(encoding='utf-8-sig');year=None;mw=dieese=None
 pat=re.compile(r'^(Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro)\s+R\$\s*([\d.]+,\d{2})\s+R\$\s*([\d.]+,\d{2})$')
 def br(s):return float(s.replace('.','').replace(',','.'))
+
+def normalize_pnad_city(value):
+    city=re.sub(r'\s*\([A-Z]{2}\)$','',str(value).strip())
+    return {'Vitória':'Grande Vitória'}.get(city,city)
 for line in text.splitlines():
     line=line.strip()
     if re.fullmatch(r'\d{4}',line):year=int(line);continue
@@ -55,7 +59,7 @@ for r in [x for x in monthly if x['date']==latest_date]:
 # PNAD latest
 pnad_latest={}
 for r in readcsv(INTERIM/'pnad_city_labour_income_quarterly.csv'):
-    city=r['city'];q=r['quarter'];v=num(r['labour_income_real'])
+    city=normalize_pnad_city(r['city']);q=r['quarter'];v=num(r['labour_income_real'])
     if city not in pnad_latest or q>pnad_latest[city][0]:pnad_latest[city]=(q,v)
 for r in latest:
     qv=pnad_latest.get(r['city']);r['pnad_quarter']=qv[0] if qv else '';r['labour_income_real']=qv[1] if qv else float('nan')
